@@ -1,0 +1,651 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OtakuNest</title>
+    <link rel="icon" type="image/png" href="images/logo.png">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+</head>
+<body>
+    <header>
+        <a href="index.html" class="logo">
+            <img src="images/logo.png" alt="OtakuNest Logo" class="logo-img">OtakuNest
+        </a>
+
+         <div class="menu_toggle"></div>
+        <ul class="menu">
+            <li><a href="index.html">Accueil</a></li>
+            <li><a href="presentation.html">Présentation</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li class="buy_li"><a href="#latest-releases">Regarder</a></li>
+        </ul>
+    </header>
+    <!-- description section -->
+
+    <section class="description">
+        <div class="left">
+            <div class="hero-content">
+            <h1>
+                <span>I</span>
+                <span>AM</span>
+                <span>WHAT</span>
+                <span>I</span>
+                <span>CHOOSE</span>
+                <span>TO</span>
+                <span>BECOME</span>
+            </h1>
+                <p>Plongez dans un univers extraordinaire d'animations japonaises. Découvrez des histoires captivantes, des personnages inoubliables et une expérience visuelle unique.</p>
+                <div class="hero-stats">
+                    <div class="stat-box">
+                        <span class="number">1000+</span>
+                        <span class="label">Animes</span>
+                    </div>
+                    <div class="stat-box">
+                        <span class="number">24/7</span>
+                        <span class="label">Streaming</span>
+                    </div>
+                    <div class="stat-box">
+                        <span class="number">HD</span>
+                        <span class="label">Qualité</span>
+                    </div>
+                </div>
+                <div class="cta-buttons">
+                    <a href="#latest-releases" class="primary-btn">Découvrir</a>
+                    <a href="#" class="secondary-btn">En savoir plus</a>
+                </div>
+                <div class="features">
+                    <div class="feature">
+                        <span class="feature-icon">🎯</span>
+                        <span class="feature-text">Sans publicité</span>
+                    </div>
+                    <div class="feature">
+                        <span class="feature-text">Multi-devices</span>
+                    </div>
+                    <div class="feature">
+                        <span class="feature-text">Mises à jour quotidiennes</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="right">
+            <div class="image-container">
+                <img src="images/Img.png" class="image_bird main-image" alt="Hero Image">
+            </div>
+            <div class="image-badges">
+                <div class="badge">
+                    <span class="badge-icon">🏆</span>
+                    <span class="badge-text">Top Qualité</span>
+                </div>
+                <div class="badge">
+                    
+                    <span class="badge-text">Exclusif</span>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Section des genres populaires -->
+    <section class="popular-genres">
+        <h2 class="section-title">Genres <span>Populaires</span></h2>
+        <div class="genres-grid">
+            <div class="genre-card" data-genre="shonen">
+                <div class="genre-icon">⚔️</div>
+                <h3>Shonen</h3>
+                <p>Action, aventure et dépassement de soi</p>
+                <div class="genre-examples">
+                    <span>Naruto</span>
+                    <span>One Piece</span>
+                    <span>Dragon Ball</span>
+                </div>
+            </div>
+            <div class="genre-card" data-genre="seinen">
+                <div class="genre-icon">🎭</div>
+                <h3>Seinen</h3>
+                <p>Histoires matures et complexes</p>
+                <div class="genre-examples">
+                    <span>Berserk</span>
+                    <span>Monster</span>
+                    <span>Ghost in the Shell</span>
+                </div>
+            </div>
+            <div class="genre-card" data-genre="slice-of-life">
+                <div class="genre-icon">🌸</div>
+                <h3>Slice of Life</h3>
+                <p>Tranches de vie et moments du quotidien</p>
+                <div class="genre-examples">
+                    <span>K-On!</span>
+                    <span>Yuru Camp</span>
+                    <span>A Silent Voice</span>
+                </div>
+            </div>
+            <div class="genre-card" data-genre="mecha">
+                <div class="genre-icon">🤖</div>
+                <h3>Mecha</h3>
+                <p>Robots géants et science-fiction</p>
+                <div class="genre-examples">
+                    <span>Evangelion</span>
+                    <span>Gundam</span>
+                    <span>Code Geass</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section des dernières sorties améliorée -->
+    <section id="latest-releases" class="latest-releases">
+        <div class="releases-header">
+            <h2 class="section-title">Dernières <span>Sorties</span></h2>
+            <div class="releases-filters">
+                <button class="filter-btn active" data-filter="all">Tous</button>
+                <button class="filter-btn" data-filter="new">Nouveautés</button>
+                <button class="filter-btn" data-filter="popular">Populaires</button>
+                <button class="filter-btn" data-filter="upcoming">À venir</button>
+            </div>
+        </div>
+        
+        <div class="releases-grid">
+            <!-- Carte 1 -->
+            <div class="anime-card" data-category="new popular">
+                <div class="card-image">
+                    <img src="images/demon.png" alt="Demon Slayer">
+                    <div class="card-overlay">
+                        <span class="rating">4.8 ★</span>
+                        <div class="card-tags">
+                            <span class="tag">NOUVEAU</span>
+                            <span class="tag">POPULAIRE</span>
+                        </div>
+                        <button class="watch-btn">Regarder</button>
+                    </div>
+                </div>
+                <div class="card-content">
+                    <h3>Demon Slayer: Saison 3</h3>
+                    <p>Action, Aventure, Surnaturel</p>
+                    <div class="episode-info">
+                        <span class="current">Épisode 12/12</span>
+                        <span class="duration">24 min/ep</span>
+                    </div>
+                    <div class="progress-bar">
+                        <div class="progress" style="width: 100%"></div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Carte 2 -->
+            <div class="anime-card" data-category="new popular">
+                <div class="card-image">
+                    <img src="images/img1.png" alt="Attack on Titan">
+                    <div class="card-overlay">
+                        <span class="rating">4.9 ★</span>
+                        <div class="card-tags">
+                            <span class="tag">FINAL</span>
+                            <span class="tag">EXCLUSIF</span>
+                        </div>
+                        <button class="watch-btn">Regarder</button>
+                    </div>
+                </div>
+                <div class="card-content">
+                    <h3>Attack on Titan: Final Season</h3>
+                    <p>Action, Drame, Fantasy</p>
+                    <div class="episode-info">
+                        <span class="current">Épisode 16/16</span>
+                        <span class="duration">25 min/ep</span>
+                    </div>
+                    <div class="progress-bar">
+                        <div class="progress" style="width: 95%"></div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Carte 3 -->
+            <div class="anime-card" data-category="new">
+                <div class="card-image">
+                    <img src="images/juju.png" alt="Jujutsu Kaisen">
+                    <div class="card-overlay">
+                        <span class="rating">4.7 ★</span>
+                        <div class="card-tags">
+                            <span class="tag">NOUVEAU</span>
+                        </div>
+                        <button class="watch-btn">Regarder</button>
+                    </div>
+                </div>
+                <div class="card-content">
+                    <h3>Jujutsu Kaisen: Saison 2</h3>
+                    <p>Action, Surnaturel, École</p>
+                    <div class="episode-info">
+                        <span class="current">Épisode 8/23</span>
+                        <span class="duration">24 min/ep</span>
+                    </div>
+                    <div class="progress-bar">
+                        <div class="progress" style="width: 35%"></div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Carte 4 -->
+            <div class="anime-card" data-category="popular">
+                <div class="card-image">
+                    <img src="images/one.png" alt="One Piece">
+                    <div class="card-overlay">
+                        <span class="rating">4.9 ★</span>
+                        <div class="card-tags">
+                            <span class="tag">LÉGENDAIRE</span>
+                        </div>
+                        <button class="watch-btn">Regarder</button>
+                    </div>
+                </div>
+                <div class="card-content">
+                    <h3>One Piece: Arc Wano</h3>
+                    <p>Aventure, Action, Comédie</p>
+                    <div class="episode-info">
+                        <span class="current">Épisode 1074</span>
+                        <span class="duration">23 min/ep</span>
+                    </div>
+                    <div class="progress-bar">
+                        <div class="progress" style="width: 85%"></div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Carte 5 -->
+            <div class="anime-card" data-category="popular">
+                <div class="card-image">
+                    <img src="images/Hero.png" alt="My Hero Academia">
+                    <div class="card-overlay">
+                        <span class="rating">4.6 ★</span>
+                        <div class="card-tags">
+                            <span class="tag">POPULAIRE</span>
+                        </div>
+                        <button class="watch-btn">Regarder</button>
+                    </div>
+                </div>
+                <div class="card-content">
+                    <h3>My Hero Academia: Saison 6</h3>
+                    <p>Super-héros, Action, École</p>
+                    <div class="episode-info">
+                        <span class="current">Épisode 25/25</span>
+                        <span class="duration">24 min/ep</span>
+                    </div>
+                    <div class="progress-bar">
+                        <div class="progress" style="width: 100%"></div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Carte 6 -->
+            <div class="anime-card" data-category="upcoming">
+                <div class="card-image">
+                    <img src="images/img3.png" alt="Chainsaw Man">
+                    <div class="card-overlay">
+                        <span class="rating">4.8 ★</span>
+                        <div class="card-tags">
+                            <span class="tag">À VENIR</span>
+                        </div>
+                        <button class="watch-btn">Regarder</button>
+                    </div>
+                </div>
+                <div class="card-content">
+                    <h3>Chainsaw Man: Saison 2</h3>
+                    <p>Action, Surnaturel, Gore</p>
+                    <div class="episode-info">
+                        <span class="current">Prochainement</span>
+                        <span class="duration">24 min/ep</span>
+                    </div>
+                    <div class="progress-bar">
+                        <div class="progress" style="width: 0%"></div>
+                    </div>
+                </div>
+            </div>
+
+ <!-- Carte 7 -->
+            <div class="anime-card" data-category="new popular">
+                <div class="card-image">
+                    <img src="images/demon.png" alt="Demon Slayer">
+                    <div class="card-overlay">
+                        <span class="rating">4.8 ★</span>
+                        <div class="card-tags">
+                            <span class="tag">NOUVEAU</span>
+                            <span class="tag">POPULAIRE</span>
+                        </div>
+                        <button class="watch-btn">Regarder</button>
+                    </div>
+                </div>
+                <div class="card-content">
+                    <h3>Demon Slayer: Saison 3</h3>
+                    <p>Action, Aventure, Surnaturel</p>
+                    <div class="episode-info">
+                        <span class="current">Épisode 12/12</span>
+                        <span class="duration">24 min/ep</span>
+                    </div>
+                    <div class="progress-bar">
+                        <div class="progress" style="width: 100%"></div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Carte 8 -->
+            <div class="anime-card" data-category="new popular">
+                <div class="card-image">
+                    <img src="images/img1.png" alt="Attack on Titan">
+                    <div class="card-overlay">
+                        <span class="rating">4.9 ★</span>
+                        <div class="card-tags">
+                            <span class="tag">FINAL</span>
+                            <span class="tag">EXCLUSIF</span>
+                        </div>
+                        <button class="watch-btn">Regarder</button>
+                    </div>
+                </div>
+                <div class="card-content">
+                    <h3>Attack on Titan: Final Season</h3>
+                    <p>Action, Drame, Fantasy</p>
+                    <div class="episode-info">
+                        <span class="current">Épisode 16/16</span>
+                        <span class="duration">25 min/ep</span>
+                    </div>
+                    <div class="progress-bar">
+                        <div class="progress" style="width: 95%"></div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="releases-pagination">
+            <button class="pagination-btn" data-page="prev">←</button>
+            <span class="current-page">1</span>
+            <span>/</span>
+            <span class="total-pages">5</span>
+            <button class="pagination-btn" data-page="next">→</button>
+        </div>
+    </section>
+
+    <!-- Section des catégories populaires -->
+    <div class="categories-section">
+        <h2 class="section-title">Catégories <span>Populaires</span></h2>
+        <div class="categories-grid">
+            <div class="category-item" data-category="action">
+                <div class="category-icon">🔥</div>
+                <h3>Action</h3>
+                <span class="anime-count">250+ animes</span>
+                <p class="category-desc">Combats épiques et aventures palpitantes</p>
+                <div class="popular-titles">
+                    <span>Demon Slayer</span>
+                    <span>My Hero Academia</span>
+                    <span>One Punch Man</span>
+                </div>
+                <button class="explore-btn">Explorer</button>
+            </div>
+            <div class="category-item" data-category="romance">
+                <div class="category-icon">💖</div>
+                <h3>Romance</h3>
+                <span class="anime-count">180+ animes</span>
+                <p class="category-desc">Histoires d'amour touchantes</p>
+                <div class="popular-titles">
+                    <span>Your Name</span>
+                    <span>Kimi ni Todoke</span>
+                    <span>Toradora!</span>
+                </div>
+                <button class="explore-btn">Explorer</button>
+            </div>
+            <div class="category-item" data-category="fantasy">
+                <div class="category-icon">✨</div>
+                <h3>Fantasy</h3>
+                <span class="anime-count">200+ animes</span>
+                <p class="category-desc">Mondes magiques et créatures fantastiques</p>
+                <div class="popular-titles">
+                    <span>Re:Zero</span>
+                    <span>Sword Art Online</span>
+                    <span>Made in Abyss</span>
+                </div>
+                <button class="explore-btn">Explorer</button>
+            </div>
+            <div class="category-item" data-category="scifi">
+                <div class="category-icon">🚀</div>
+                <h3>Sci-Fi</h3>
+                <span class="anime-count">120+ animes</span>
+                <p class="category-desc">Aventures futuristes et technologies</p>
+            </div>
+            <div class="category-item" data-category="slice-of-life">
+                <div class="category-icon">🌸</div>
+                <h3>Tranche de vie</h3>
+                <span class="anime-count">150+ animes</span>
+                <p class="category-desc">Histoires du quotidien attachantes</p>
+            </div>
+            <div class="category-item" data-category="horror">
+                <div class="category-icon">👻</div>
+                <h3>Horreur</h3>
+                <span class="anime-count">80+ animes</span>
+                <p class="category-desc">Frissons et suspense garantis</p>
+            </div>
+            <div class="category-item" data-category="sports">
+                <div class="category-icon">⚽</div>
+                <h3>Sports</h3>
+                <span class="anime-count">90+ animes</span>
+                <p class="category-desc">Compétitions et dépassement de soi</p>
+            </div>
+            <div class="category-item" data-category="comedy">
+                <div class="category-icon">😄</div>
+                <h3>Comédie</h3>
+                <span class="anime-count">160+ animes</span>
+                <p class="category-desc">Rires et bonne humeur</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Section Tendances améliorée -->
+    <div class="trending-section">
+        <h2 class="section-title">Tendances <span>du Moment</span></h2>
+        
+        <!-- Stats générales -->
+        <div class="trending-overview">
+            <div class="trend-stat">
+                <span class="stat-number">1M+</span>
+                <span class="stat-label">Vues aujourd'hui</span>
+            </div>
+            <div class="trend-stat">
+                <span class="stat-number">50K+</span>
+                <span class="stat-label">Utilisateurs actifs</span>
+            </div>
+            <div class="trend-stat">
+                <span class="stat-number">100+</span>
+                <span class="stat-label">Nouveaux animes</span>
+            </div>
+        </div>
+
+        <!-- Top Tendances -->
+        <div class="trending-stats">
+            <div class="stat-item">
+                <div class="stat-number">#1</div>
+                <div class="stat-content">
+                    <h4>Demon Slayer</h4>
+                    <div class="trend-details">
+                        <span class="views">↑ 500K vues</span>
+                        <span class="rating">4.8 ★</span>
+                        <span class="trend-tag">En hausse 🔥</span>
+                    </div>
+                    <div class="trend-progress">
+                        <div class="progress-bar">
+                            <div class="progress" style="width: 95%"></div>
+                        </div>
+                        <span class="trend-percentage">95% de croissance</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="stat-item">
+                <div class="stat-number">#2</div>
+                <div class="stat-content">
+                    <h4>Attack on Titan</h4>
+                    <div class="trend-details">
+                        <span class="views">↑ 450K vues</span>
+                        <span class="rating">4.9 ★</span>
+                        <span class="trend-tag">Final 🏆</span>
+                    </div>
+                    <div class="trend-progress">
+                        <div class="progress-bar">
+                            <div class="progress" style="width: 88%"></div>
+                        </div>
+                        <span class="trend-percentage">88% de croissance</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="stat-item">
+                <div class="stat-number">#3</div>
+                <div class="stat-content">
+                    <h4>Jujutsu Kaisen</h4>
+                    <div class="trend-details">
+                        <span class="views">↑ 400K vues</span>
+                        <span class="rating">4.7 ★</span>
+                        <span class="trend-tag">Nouveau 🆕</span>
+                    </div>
+                    <div class="trend-progress">
+                        <div class="progress-bar">
+                            <div class="progress" style="width: 82%"></div>
+                        </div>
+                        <span class="trend-percentage">82% de croissance</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Tendances par Catégorie -->
+        <div class="trending-categories">
+            <h3>Tendances par <span>Catégorie</span></h3>
+            <div class="category-trends">
+                <div class="trend-category">
+                    <div class="category-header">
+                        <span class="category-icon">🔥</span>
+                        <h4>Action</h4>
+                    </div>
+                    <div class="category-stats">
+                        <div class="stat">
+                            <span class="stat-value">+25%</span>
+                            <span class="stat-label">Cette semaine</span>
+                        </div>
+                        <div class="top-title">One Punch Man S3</div>
+                    </div>
+                </div>
+
+                <div class="trend-category">
+                    <div class="category-header">
+                        <span class="category-icon">✨</span>
+                        <h4>Fantasy</h4>
+                    </div>
+                    <div class="category-stats">
+                        <div class="stat">
+                            <span class="stat-value">+40%</span>
+                            <span class="stat-label">Cette semaine</span>
+                        </div>
+                        <div class="top-title">Re:Zero S3</div>
+                    </div>
+                </div>
+
+                <div class="trend-category">
+                    <div class="category-header">
+                        <span class="category-icon">💖</span>
+                        <h4>Romance</h4>
+                    </div>
+                    <div class="category-stats">
+                        <div class="stat">
+                            <span class="stat-value">+30%</span>
+                            <span class="stat-label">Cette semaine</span>
+                        </div>
+                        <div class="top-title">Kimi no Na wa</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Technologies Utilisées -->
+        <div class="tech-section">
+            <h3>Technologies <span>Avancées</span></h3>
+            <div class="tech-grid">
+                <div class="tech-item">
+                    <div class="tech-icon">🎮</div>
+                    <h4>Streaming HD</h4>
+                    <p>Qualité jusqu'à 4K HDR</p>
+                    <div class="tech-stats">
+                        <span class="tech-stat">60 FPS</span>
+                        <span class="tech-stat">Dolby Vision</span>
+                    </div>
+                </div>
+
+                <div class="tech-item">
+                    <div class="tech-icon">🔄</div>
+                    <h4>IA Recommandations</h4>
+                    <p>Suggestions personnalisées</p>
+                    <div class="tech-stats">
+                        <span class="tech-stat">95% précision</span>
+                        <span class="tech-stat">ML avancé</span>
+                    </div>
+                </div>
+
+                <div class="tech-item">
+                    <div class="tech-icon">📱</div>
+                    <h4>Multi-Plateformes</h4>
+                    <p>Synchronisation parfaite</p>
+                    <div class="tech-stats">
+                        <span class="tech-stat">Cloud Sync</span>
+                        <span class="tech-stat">Offline Mode</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Initialisation de ScrollTrigger -->
+    <script>
+        gsap.registerPlugin(ScrollTrigger);
+    </script>
+    <div class="scroll-to-top">↑</div>
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>À propos de nous</h3>
+                <p>Votre destination ultime pour les animes. Découvrez une collection exceptionnelle d'animations japonaises en streaming HD.</p>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-twitter">🐦</i></a>
+                    <a href="#"><i class="fab fa-facebook">📘</i></a>
+                    <a href="#"><i class="fab fa-instagram">📸</i></a>
+                    <a href="#"><i class="fab fa-discord">💬</i></a>
+                </div>
+            </div>
+            <div class="footer-section">
+                <h3>Liens rapides</h3>
+                <ul class="footer-links">
+                    <li><a href="#latest-releases">Dernières sorties</a></li>
+                    <li><a href="#popular-genres">Genres populaires</a></li>
+                    <li><a href="presentation.html">Notre histoire</a></li>
+                    <li><a href="contact.html">Nous contacter</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Catégories populaires</h3>
+                <ul class="footer-links">
+                    <li><a href="#">Action & Aventure</a></li>
+                    <li><a href="#">Science-fiction</a></li>
+                    <li><a href="#">Slice of Life</a></li>
+                    <li><a href="#">Fantasy</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Newsletter</h3>
+                <p>Restez informé des dernières sorties et actualités.</p>
+                <form class="newsletter-form">
+                    <input type="email" placeholder="Votre email" required>
+                    <button type="submit">S'abonner</button>
+                </form>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 Khadija DRIDER ANIMES SITE. Tous droits réservés. | Créé avec ❤️ pour les fans d'anime</p>
+        </div>
+    </footer>
+    <script src="main.js"></script>
+</body>
+</html>
