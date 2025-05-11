@@ -1,6 +1,7 @@
 # 🎬 ANIMES SITE
 
 Un site web moderne et interactif dédié aux animes, offrant une expérience utilisateur immersive avec des animations fluides et un design responsive.
+
 ![Exécution du projet](images/Execution.jpg)
 ![logo du projet](images/logo1.png)
 
